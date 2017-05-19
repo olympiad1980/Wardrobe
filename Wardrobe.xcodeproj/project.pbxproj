@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840C335F1ECEE18F00A3AE08 /* NavigationStoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C335E1ECEE18F00A3AE08 /* NavigationStoryVC.swift */; };
 		8416F4871ECA43D800293771 /* ManekenModelScrollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8416F4861ECA43D800293771 /* ManekenModelScrollVC.swift */; };
 		841F5E6E1EC6CE0B002D342D /* StartingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F5E6D1EC6CE0B002D342D /* StartingVC.swift */; };
 		841F5E701EC6D81A002D342D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F5E6F1EC6D81A002D342D /* Extension.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		840C335E1ECEE18F00A3AE08 /* NavigationStoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationStoryVC.swift; sourceTree = "<group>"; };
 		8416F4861ECA43D800293771 /* ManekenModelScrollVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManekenModelScrollVC.swift; sourceTree = "<group>"; };
 		841F5E6D1EC6CE0B002D342D /* StartingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartingVC.swift; sourceTree = "<group>"; };
 		841F5E6F1EC6D81A002D342D /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 		8484A5DF1EC653CE006B54AE /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				840C335E1ECEE18F00A3AE08 /* NavigationStoryVC.swift */,
 				84F8AAF91EC99A3500617562 /* ManekenVC.swift */,
 				841F5E6D1EC6CE0B002D342D /* StartingVC.swift */,
 				844E6C1C1EC640D0008D6E2D /* WardrobeTableVC.swift */,
@@ -232,6 +235,7 @@
 				84E837031EC7071B0041C36B /* CollectionCell.swift in Sources */,
 				8416F4871ECA43D800293771 /* ManekenModelScrollVC.swift in Sources */,
 				841F5E6E1EC6CE0B002D342D /* StartingVC.swift in Sources */,
+				840C335F1ECEE18F00A3AE08 /* NavigationStoryVC.swift in Sources */,
 				8484A5D61EC64914006B54AE /* TableCell.swift in Sources */,
 				84E837051EC70F540041C36B /* PictureDataVC.swift in Sources */,
 				8484A5D81EC649C8006B54AE /*  Clothes.swift in Sources */,
