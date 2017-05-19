@@ -40,29 +40,11 @@ class StartingVC: UIViewController {
         return button
     }
     
-    func goToWardrobeVC(sender: UIButton) {
-        
-        if sender.transform == CGAffineTransform.identity {
-            UIView.animate(withDuration: 0.3, animations: {
-                sender.transform = CGAffineTransform.init(scaleX: 0.7, y: 0.7)
-            })
-        }
-            
-        else {
-            UIView.animate(withDuration: 0.3, animations: {
-                sender.transform = CGAffineTransform.identity
-            })
-        }
-        
-        let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
-        let nextVC = storyBoard.instantiateViewController(withIdentifier: "NavigationVC")
-        self.present(nextVC, animated: true, completion: nil)
-    }
     
     func goToManekenVC(sender: UIButton) {
         if sender.transform == CGAffineTransform.identity {
             UIView.animate(withDuration: 0.3, animations: {
-                sender.transform = CGAffineTransform.init(scaleX: 1.2, y: 1.2)
+                sender.transform = CGAffineTransform.init(scaleX: 1.5, y: 1.5)
             })
         }
             
@@ -76,6 +58,26 @@ class StartingVC: UIViewController {
         let nextVC = storyBoard.instantiateViewController(withIdentifier: "ManekenVC")
         self.present(nextVC, animated: true, completion: nil)
     }
+    
+    func goToWardrobeVC(sender: UIButton) {
+        
+        if sender.transform == CGAffineTransform.identity {
+            UIView.animate(withDuration: 0.3, animations: {
+                sender.transform = CGAffineTransform.init(scaleX: 0.4, y: 0.4)
+            })
+        }
+            
+        else {
+            UIView.animate(withDuration: 0.3, animations: {
+                sender.transform = CGAffineTransform.identity
+            })
+        }
+        
+        let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+        let nextVC = storyBoard.instantiateViewController(withIdentifier: "NavigationVC")
+        self.present(nextVC, animated: true, completion: nil)
+    }
+
 }
 
 
