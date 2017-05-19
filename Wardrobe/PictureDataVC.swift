@@ -3,19 +3,30 @@ import UIKit
 
 class PictureDataVC: UIViewController {
     
-    var imageData: String? = nil
-    
+    var imageData: String?
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(initScrollForBG())
     }
-    
+
+    @IBAction func deleteBarButtonAction(_ sender: UIBarButtonItem) {
+        let alert = UIAlertController(title: "Alert", message: "Delete?", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (alert) in
+            self.initImageReflectingClothes().alpha = 0
+        }))
+        present(alert, animated: true, completion: nil)
+    }
+}
+
+extension PictureDataVC {
+
     func initImageReflectingClothes() -> UIImageView {
         let clothes = UIImageView()
-        let sizeWidth:CGFloat = (view.frame.size.width + view.frame.size.width) / 3
+        let sizeWidth:CGFloat = (view.frame.size.width + view.frame.size.width) / 2
         let sizeHeight:CGFloat = view.frame.size.height / 2
-        let centerY = (view.center.y - view.center.x / 2)
-        clothes.frame = CGRect(x: 0, y: centerY, width: sizeHeight, height: sizeWidth)
+        let centerX = (view.center.x - view.center.y / 2)
+        let centerY = (view.center.y - self.view.frame.width / 1.5)
+        clothes.frame = CGRect(x: centerX, y: centerY, width: sizeHeight, height: sizeWidth)
         clothes.contentMode = .scaleAspectFill
         clothes.clipsToBounds = true
         if let imageData = imageData {
@@ -32,3 +43,8 @@ class PictureDataVC: UIViewController {
         return scroll
     }
 }
+
+
+
+
+

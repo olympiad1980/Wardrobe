@@ -7,13 +7,13 @@ struct WardrobeModel {
         
         let сlothesArray = [
             
-            Clothes(name: "Hats", icons: "iconsCapsMagenta",
+            Clothes(name: "hats", icons: "caps",
                          images: ["space", "space", "space", "space"]),
-            Clothes(name: "Outewear", icons: "iconsOutMagenta",
+            Clothes(name: "outewear", icons: "outeweare",
                          images: ["outwear", "outwear", "outwear","outwear","outwear", "outwear", "outwear"]),
-            Clothes(name: "Underwear", icons: "iconsUnderMagenta",
-                         images: ["picters02", "picters01", "picters03", "picters05","picters04", "picters01"]),
-            Clothes(name: "Footwear", icons: "iconsFootMagenta",
+            Clothes(name: "underwear", icons: "shorts",
+                         images: ["underwear", "underwear", "underwear", "underwear","underwear", "underwear"]),
+            Clothes(name: "footwear", icons: "footwear",
                          images: ["picters03", "picters04", "picters03", "picters05","picters01","picters02"])
         ]
         return сlothesArray

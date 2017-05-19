@@ -26,5 +26,7 @@ class TableCell: UITableViewCell {
         nameLabel.textColor = UIColor.init(netHex: 0xc83b96)
         iconsImage.layer.cornerRadius = 30
         iconsImage.clipsToBounds = true
+        iconsImage.tintColor = UIColor.white
+        iconsImage.backgroundColor = UIColor.init(netHex: 0x22282e)
     }
 }
