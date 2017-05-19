@@ -138,7 +138,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HKi-YI-cJd">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HKi-YI-cJd">
                                                     <rect key="frame" x="77" y="25" width="60" height="60"/>
                                                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
@@ -157,9 +157,10 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbb-sv-GpL">
-                                                    <rect key="frame" x="163" y="25" width="52" height="35"/>
+                                                    <rect key="frame" x="163" y="25" width="180" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="SmZ-Ko-lK8"/>
+                                                        <constraint firstAttribute="width" constant="180" id="jfI-7X-Xpt"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="19"/>
                                                     <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -316,6 +317,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
+                        <outlet property="navigationColor" destination="4sJ-lb-aZU" id="moV-rB-gSV"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4xc-2q-lo7"/>
                     </connections>
                 </navigationController>

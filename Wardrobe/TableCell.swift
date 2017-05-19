@@ -23,7 +23,7 @@ class TableCell: UITableViewCell {
     }
     
     func propertyCell() {
-        nameLabel.textColor = UIColor.init(netHex: 0xc83b96)
+        nameLabel.textColor = UIColor.black
         iconsImage.layer.cornerRadius = 30
         iconsImage.clipsToBounds = true
         iconsImage.tintColor = UIColor.white
