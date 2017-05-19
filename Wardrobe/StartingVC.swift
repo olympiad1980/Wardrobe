@@ -8,6 +8,9 @@ class StartingVC: UIViewController {
         view.addSubview(wardrobeButtonAction())
         view.addSubview(manekenButtonAction())
     }
+}
+
+fileprivate extension StartingVC {
     
     func manekenButtonAction() -> UIButton {
         let button = UIButton()
@@ -40,8 +43,7 @@ class StartingVC: UIViewController {
         return button
     }
     
-    
-    func goToManekenVC(sender: UIButton) {
+    @objc func goToManekenVC(sender: UIButton) {
         if sender.transform == CGAffineTransform.identity {
             UIView.animate(withDuration: 0.3, animations: {
                 sender.transform = CGAffineTransform.init(scaleX: 1.5, y: 1.5)
@@ -59,11 +61,11 @@ class StartingVC: UIViewController {
         self.present(nextVC, animated: true, completion: nil)
     }
     
-    func goToWardrobeVC(sender: UIButton) {
+    @objc func goToWardrobeVC(sender: UIButton) {
         
         if sender.transform == CGAffineTransform.identity {
             UIView.animate(withDuration: 0.3, animations: {
-                sender.transform = CGAffineTransform.init(scaleX: 0.4, y: 0.4)
+                sender.transform = CGAffineTransform.init(scaleX: 0.7, y: 0.7)
             })
         }
             
@@ -77,8 +79,5 @@ class StartingVC: UIViewController {
         let nextVC = storyBoard.instantiateViewController(withIdentifier: "NavigationVC")
         self.present(nextVC, animated: true, completion: nil)
     }
-
 }
-
-
 

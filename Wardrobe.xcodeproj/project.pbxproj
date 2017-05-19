@@ -79,8 +79,8 @@
 				844E6C1E1EC640D0008D6E2D /* Main.storyboard */,
 				844E6C2C1EC640F5008D6E2D /* Controller */,
 				844E6C2D1EC64112008D6E2D /* Support */,
-				844E6C211EC640D0008D6E2D /* Assets.xcassets */,
 				84F8AAFD1EC9A04E00617562 /* IB */,
+				844E6C211EC640D0008D6E2D /* Assets.xcassets */,
 				844E6C231EC640D0008D6E2D /* LaunchScreen.storyboard */,
 				844E6C261EC640D0008D6E2D /* Info.plist */,
 			);

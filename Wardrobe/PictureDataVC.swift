@@ -4,6 +4,7 @@ import UIKit
 class PictureDataVC: UIViewController {
     
     var imageData: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(initScrollForBG())
@@ -18,7 +19,7 @@ class PictureDataVC: UIViewController {
     }
 }
 
-extension PictureDataVC {
+fileprivate extension PictureDataVC {
 
     func initImageReflectingClothes() -> UIImageView {
         let clothes = UIImageView()

@@ -13,7 +13,10 @@ class TableCell: UITableViewCell {
             propertyCell()
         }
     }
-    
+}
+
+fileprivate extension TableCell {
+
     func setUpCell() {
         if let saveCell = initCell {
             nameLabel.text = saveCell.name
@@ -29,4 +32,5 @@ class TableCell: UITableViewCell {
         iconsImage.tintColor = UIColor.white
         iconsImage.backgroundColor = UIColor.init(netHex: 0x22282e)
     }
+    
 }
