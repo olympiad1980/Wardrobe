@@ -7,13 +7,15 @@ class PictureDataVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.init(netHex: 0xdbe0e3)
         view.addSubview(initScrollForBG())
     }
 
     @IBAction func deleteBarButtonAction(_ sender: UIBarButtonItem) {
+        
         let alert = UIAlertController(title: "Alert", message: "Delete?", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (alert) in
-            self.initImageReflectingClothes().alpha = 0
+            print("Alert is run!")
         }))
         present(alert, animated: true, completion: nil)
     }
@@ -45,7 +47,9 @@ fileprivate extension PictureDataVC {
     }
 }
 
-
+extension PictureDataVC: UIScrollViewDelegate {
+    
+}
 
 
 

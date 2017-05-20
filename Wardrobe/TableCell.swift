@@ -20,7 +20,7 @@ fileprivate extension TableCell {
     func setUpCell() {
         if let saveCell = initCell {
             nameLabel.text = saveCell.name
-            countLabel.text = "count\(saveCell.images.count.description)"
+            countLabel.text = "\(saveCell.images.count.description) count"
             iconsImage.image = UIImage.init(named: saveCell.icons)
         }
     }

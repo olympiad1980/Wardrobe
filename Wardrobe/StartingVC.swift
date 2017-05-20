@@ -5,12 +5,22 @@ class StartingVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(wardrobeButtonAction())
-        view.addSubview(manekenButtonAction())
+        view.addSubview(initScrollForBG())
     }
 }
 
 fileprivate extension StartingVC {
+    
+    func initScrollForBG() -> UIScrollView {
+        let scroll = UIScrollView()
+        scroll.frame = view.bounds
+        scroll.contentSize.height = scroll.frame.size.height + 90
+        scroll.addSubview(manekenButtonAction())
+        scroll.addSubview(wardrobeButtonAction())
+        
+        return scroll
+        
+    }
     
     func manekenButtonAction() -> UIButton {
         let button = UIButton()
@@ -57,7 +67,7 @@ fileprivate extension StartingVC {
         }
         
         let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
-        let nextVC = storyBoard.instantiateViewController(withIdentifier: "ManekenVC")
+        let nextVC = storyBoard.instantiateViewController(withIdentifier: "TabBarVC")
         self.present(nextVC, animated: true, completion: nil)
     }
     

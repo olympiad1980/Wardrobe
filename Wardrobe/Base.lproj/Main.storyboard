@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--ManekenVC-->
+        <!--Camera-->
         <scene sceneID="oiY-H6-Ajn">
             <objects>
                 <viewController storyboardIdentifier="ManekenVC" id="aAv-xg-Kpq" customClass="ManekenVC" customModule="Wardrobe" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wardrobeBippet" translatesAutoresizingMaskIntoConstraints="NO" id="IHv-nI-AwH">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZY-LK-YQO">
                                 <rect key="frame" x="32" y="48" width="40" height="40"/>
@@ -37,7 +37,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GV9-SH-AeL">
-                                <rect key="frame" x="119" y="297" width="177" height="300"/>
+                                <rect key="frame" x="119" y="270" width="177" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="underwear" translatesAutoresizingMaskIntoConstraints="NO" id="Z4e-W3-VS2">
@@ -52,7 +52,7 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oR2-z6-30O">
-                                <rect key="frame" x="87" y="170" width="240" height="190"/>
+                                <rect key="frame" x="87" y="155" width="240" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="outwear" translatesAutoresizingMaskIntoConstraints="NO" id="vfw-H6-Sr8">
@@ -76,6 +76,7 @@
                             <constraint firstItem="Xg8-BT-H9s" firstAttribute="top" secondItem="IHv-nI-AwH" secondAttribute="bottom" id="wdk-NF-jyF"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Camera" id="oK0-Pm-KgW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nah-8k-Ivm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="ne6-LH-hfy">
@@ -89,7 +90,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="311.59420289855075" y="-541.304347826087"/>
+            <point key="canvasLocation" x="313" y="-541"/>
         </scene>
         <!--StartingVC-->
         <scene sceneID="4yJ-ei-Vlg">
@@ -110,7 +111,7 @@
             </objects>
             <point key="canvasLocation" x="314" y="139"/>
         </scene>
-        <!--Wardrobe-->
+        <!--WARDROBE-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="WardrobeTableVC" id="BYZ-38-t0r" customClass="WardrobeTableVC" customModule="Wardrobe" customModuleProvider="target" sceneMemberID="viewController">
@@ -124,7 +125,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lsb-6e-uDu">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="ZDg-iC-L1z">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -152,7 +153,7 @@
                                                         <constraint firstAttribute="height" constant="31" id="cOU-hZ-5Zk"/>
                                                         <constraint firstAttribute="width" constant="124" id="eWH-NT-Srs"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
                                                     <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -162,7 +163,7 @@
                                                         <constraint firstAttribute="height" constant="35" id="SmZ-Ko-lK8"/>
                                                         <constraint firstAttribute="width" constant="180" id="jfI-7X-Xpt"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="19"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                                     <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -197,8 +198,8 @@
                             <constraint firstItem="Lsb-6e-uDu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="izR-9W-Sp9"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Wardrobe" id="05b-tY-tJh">
-                        <barButtonItem key="leftBarButtonItem" title="Home" systemItem="cancel" id="qEZ-0c-cD4">
+                    <navigationItem key="navigationItem" title="WARDROBE" id="05b-tY-tJh">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="qEZ-0c-cD4">
                             <connections>
                                 <action selector="cancelBarButtonAction:" destination="BYZ-38-t0r" id="4gk-Kl-UvC"/>
                             </connections>
@@ -324,6 +325,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n9i-uZ-hd1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1174" y="139"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Qdh-cG-fHc">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarVC" automaticallyAdjustsScrollViewInsets="NO" id="GFB-bT-2MU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="g4Q-eY-UjD">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="aAv-xg-Kpq" kind="relationship" relationship="viewControllers" id="2E3-Sy-4NK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ei7-1r-m6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-480" y="-541"/>
         </scene>
     </scenes>
     <resources>

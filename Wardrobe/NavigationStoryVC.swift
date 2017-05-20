@@ -13,11 +13,16 @@ class NavigationStoryVC: UINavigationController {
 
 extension NavigationStoryVC {
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     func initNavigationBar(bar: UINavigationBar) {
-//        bar.backgroundColor = UIColor.init(netHex: 0x0f75bc)
+
         bar.isTranslucent = false
         bar.alpha = 1
-        bar.barTintColor = UIColor.init(netHex: 0x0f75bc)
+        bar.barTintColor = UIColor.init(netHex: 0x212325)
+
         bar.tintColor = UIColor.white
         bar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
     }

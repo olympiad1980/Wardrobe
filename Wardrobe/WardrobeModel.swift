@@ -1,4 +1,4 @@
-// OUTERWEAR UNDERWEAR FOOTWEAR
+// HATS OUTERWEAR UNDERWEAR FOOTWEAR hats outewear underwear footwear
 struct WardrobeModel {
     
     var clothes = [Clothes]()
@@ -7,13 +7,13 @@ struct WardrobeModel {
         
         let сlothesArray = [
             
-            Clothes(name: "hats", icons: "caps",
+            Clothes(name: "HATS", icons: "caps",
                          images: ["space", "space", "space", "space"]),
-            Clothes(name: "outewear", icons: "outeweare",
+            Clothes(name: "OUTERWEAR", icons: "outeweare",
                          images: ["outwear", "outwear", "outwear","outwear","outwear", "outwear", "outwear"]),
-            Clothes(name: "underwear", icons: "shorts",
+            Clothes(name: "UNDERWEAR", icons: "shorts",
                          images: ["underwear", "underwear", "underwear", "underwear","underwear", "underwear"]),
-            Clothes(name: "footwear", icons: "footwear",
+            Clothes(name: "FOOTWEAR", icons: "footwear",
                          images: ["picters03", "picters04", "picters03", "picters05","picters01","picters02"])
         ]
         return сlothesArray
