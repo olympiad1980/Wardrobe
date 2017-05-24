@@ -5,13 +5,13 @@ class StartingVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(initScrollForBG())
+        view.addSubview(bgScroll())
     }
 }
 
-fileprivate extension StartingVC {
+extension StartingVC {
     
-    func initScrollForBG() -> UIScrollView {
+    func bgScroll() -> UIScrollView {
         let scroll = UIScrollView()
         scroll.frame = view.bounds
         scroll.contentSize.height = scroll.frame.size.height + 90
@@ -53,37 +53,14 @@ fileprivate extension StartingVC {
         return button
     }
     
-    @objc func goToManekenVC(sender: UIButton) {
-        if sender.transform == CGAffineTransform.identity {
-            UIView.animate(withDuration: 0.3, animations: {
-                sender.transform = CGAffineTransform.init(scaleX: 1.5, y: 1.5)
-            })
-        }
-            
-        else {
-            UIView.animate(withDuration: 0.3, animations: {
-                sender.transform = CGAffineTransform.identity
-            })
-        }
+    func goToManekenVC(sender: UIButton) {
         
         let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
         let nextVC = storyBoard.instantiateViewController(withIdentifier: "TabBarVC")
         self.present(nextVC, animated: true, completion: nil)
     }
     
-    @objc func goToWardrobeVC(sender: UIButton) {
-        
-        if sender.transform == CGAffineTransform.identity {
-            UIView.animate(withDuration: 0.3, animations: {
-                sender.transform = CGAffineTransform.init(scaleX: 0.7, y: 0.7)
-            })
-        }
-            
-        else {
-            UIView.animate(withDuration: 0.3, animations: {
-                sender.transform = CGAffineTransform.identity
-            })
-        }
+    func goToWardrobeVC(sender: UIButton) {
         
         let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
         let nextVC = storyBoard.instantiateViewController(withIdentifier: "NavigationVC")

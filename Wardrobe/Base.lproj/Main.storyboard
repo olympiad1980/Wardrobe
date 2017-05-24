@@ -213,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2053.6231884057975" y="138.58695652173915"/>
+            <point key="canvasLocation" x="2116" y="139"/>
         </scene>
         <!--Wardrobe CollectionVC-->
         <scene sceneID="sig-qj-jqs">
@@ -280,7 +280,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vAG-YS-4pF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2960.8000000000002" y="138.98050974512745"/>
+            <point key="canvasLocation" x="3006" y="139"/>
         </scene>
         <!--Picture DataVC-->
         <scene sceneID="bqf-22-2PB">
@@ -332,6 +332,7 @@
                 <tabBarController storyboardIdentifier="TabBarVC" automaticallyAdjustsScrollViewInsets="NO" id="GFB-bT-2MU" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="g4Q-eY-UjD">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>

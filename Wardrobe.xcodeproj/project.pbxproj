@@ -130,9 +130,9 @@
 		8484A5DF1EC653CE006B54AE /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				840C335E1ECEE18F00A3AE08 /* NavigationStoryVC.swift */,
 				84F8AAF91EC99A3500617562 /* ManekenVC.swift */,
 				841F5E6D1EC6CE0B002D342D /* StartingVC.swift */,
-				840C335E1ECEE18F00A3AE08 /* NavigationStoryVC.swift */,
 				844E6C1C1EC640D0008D6E2D /* WardrobeTableVC.swift */,
 				8484A5E01EC6569C006B54AE /* WardrobeCollectionVC.swift */,
 				84E837041EC70F540041C36B /* PictureDataVC.swift */,

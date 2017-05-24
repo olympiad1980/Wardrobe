@@ -7,6 +7,7 @@ class WardrobeCollectionVC: UIViewController {
     static let segueIdentifier = "doToPictureDataVC"
     
     var clothes: [String]?
+    var delegate: DeleteImageDelegate?
     
     let sectionInsets = UIEdgeInsets(top: 20.0, left: 20.0, bottom: 50.0, right: 20.0)
     let itemsPerRows: CGFloat = 2
@@ -24,6 +25,7 @@ extension WardrobeCollectionVC {
         if segue.identifier == WardrobeCollectionVC.segueIdentifier {
             if let nextVC = segue.destination as? PictureDataVC {
                 nextVC.imageData = sender as? String
+                nextVC.delegate = self.delegate
             }
         }
     }
