@@ -23,7 +23,6 @@ fileprivate extension ManekenVC {
         let outwear = gesture.view
         let point = gesture.translation(in: view)
         if let outwear = outwear {
-            //            let xFormCentre = (outwear.center.x) - view.center.x
             outwear.center = CGPoint(x: view.center.x + point.x, y: view.center.y + point.y)
         }
     }

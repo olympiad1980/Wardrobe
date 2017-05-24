@@ -5,9 +5,9 @@ class WardrobeCollectionVC: UIViewController {
     
     static let cellIdentifie = "cellWardrobe"
     static let segueIdentifier = "doToPictureDataVC"
-    
     var clothes: [String]?
-    var delegate: DeleteImageDelegate?
+    
+    @IBOutlet weak var collectionView: UICollectionView!
     
     let sectionInsets = UIEdgeInsets(top: 20.0, left: 20.0, bottom: 50.0, right: 20.0)
     let itemsPerRows: CGFloat = 2
@@ -17,17 +17,26 @@ extension WardrobeCollectionVC {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let clothesIndexForRow = clothes?[indexPath.row] {
-            performSegue(withIdentifier: WardrobeCollectionVC.segueIdentifier, sender: clothesIndexForRow)
+            
+            performSegue(withIdentifier: WardrobeCollectionVC.segueIdentifier, sender: indexPath)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == WardrobeCollectionVC.segueIdentifier {
-            if let nextVC = segue.destination as? PictureDataVC {
-                nextVC.imageData = sender as? String
-                nextVC.delegate = self.delegate
+            if let nextVC = segue.destination as? fullDataImagesVC {
+                if let sender = sender as? IndexPath {
+                    nextVC.itemInexPath = sender
+                    nextVC.imageName = clothes?[sender.row]
+                    nextVC.prevVC = self
+                }
             }
         }
+    }
+    
+    func dropItemForIndexPath(_ indexPath: IndexPath) {
+        clothes?.remove(at: indexPath.row)
+        collectionView.reloadData()
     }
 }
 

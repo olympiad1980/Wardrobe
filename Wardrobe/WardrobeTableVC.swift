@@ -1,10 +1,6 @@
 
 import UIKit
 
-protocol DeleteImageDelegate {
-    func deleteImage()
-}
-
 class WardrobeTableVC: UIViewController {
     
     static let cellIdentifie = "cellWardrobe"
@@ -39,7 +35,6 @@ extension WardrobeTableVC {
             if let indexPathForRow = tableView.indexPathForSelectedRow {
                 if let nextVC = segue.destination as? WardrobeCollectionVC {
                     nextVC.clothes = wardrobe[indexPathForRow.row].images
-                    nextVC.delegate = self
                 }
             }
         }
@@ -54,10 +49,6 @@ extension WardrobeTableVC {
     func tableViewProperty(table: UITableView) {
         table.separatorStyle = .none
     }
-}
-
-extension WardrobeTableVC: DeleteImageDelegate {
-    func deleteImage(){}
 }
 
 extension WardrobeTableVC: UITableViewDataSource, UITableViewDelegate {

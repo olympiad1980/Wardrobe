@@ -7,7 +7,7 @@ class TableCell: UITableViewCell {
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var iconsImage: UIImageView!
     
-    var initCell: Clothes? {
+    var initCell: Cupboard? {
         didSet {
             setUpCell()
             propertyCell()

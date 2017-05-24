@@ -1,5 +1,5 @@
 
-struct Clothes {
+struct Cupboard {
     
     func foo(n: Int) {}
     

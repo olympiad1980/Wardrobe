@@ -275,6 +275,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="collectionView" destination="C94-qg-6F8" id="Mpm-DK-StS"/>
                         <segue destination="Gl1-FI-HEH" kind="show" identifier="doToPictureDataVC" id="7lV-hQ-Kje"/>
                     </connections>
                 </viewController>
@@ -282,10 +283,10 @@
             </objects>
             <point key="canvasLocation" x="3006" y="139"/>
         </scene>
-        <!--Picture DataVC-->
+        <!--Full Data ImagesVC-->
         <scene sceneID="bqf-22-2PB">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="Gl1-FI-HEH" customClass="PictureDataVC" customModule="Wardrobe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="Gl1-FI-HEH" customClass="fullDataImagesVC" customModule="Wardrobe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gl5-Ht-e1L"/>
                         <viewControllerLayoutGuide type="bottom" id="eox-3J-neH"/>

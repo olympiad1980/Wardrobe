@@ -1,10 +1,11 @@
 
 import UIKit
 
-class PictureDataVC: UIViewController {
+class fullDataImagesVC: UIViewController {
     
-    var imageData: String?
-    var delegate: DeleteImageDelegate?
+    var itemInexPath: IndexPath?
+    var imageName: String?
+    var prevVC: WardrobeCollectionVC!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,7 @@ class PictureDataVC: UIViewController {
         
         let alert = UIAlertController(title: "Alert", message: "Delete?", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (alert) in
+            self.prevVC.dropItemForIndexPath(self.itemInexPath!)
             self.navigationController?.popViewController(animated: true)
             print("Alert is run!")
         }))
@@ -25,12 +27,7 @@ class PictureDataVC: UIViewController {
     }
 }
 
-extension PictureDataVC: DeleteImageDelegate {
-    func deleteImage() {
-    }
-}
-
-fileprivate extension PictureDataVC {
+extension fullDataImagesVC {
 
     func clothesImagesView() -> UIImageView {
         let clothes = UIImageView()
@@ -41,7 +38,7 @@ fileprivate extension PictureDataVC {
         clothes.frame = CGRect(x: centerX, y: centerY, width: sizeHeight, height: sizeWidth)
         clothes.contentMode = .scaleAspectFill
         clothes.clipsToBounds = true
-        if let imageData = imageData {
+        if let imageData = imageName {
             clothes.image = UIImage.init(named: imageData)
         }
         return clothes
@@ -56,25 +53,13 @@ fileprivate extension PictureDataVC {
     }
 }
 
-extension PictureDataVC: UIScrollViewDelegate {
+extension fullDataImagesVC: UIScrollViewDelegate {
     
     func centerScrollViewContents() {
-        let boundsSize = bgScroll().bounds.size
-        var contentsFrame = clothesImagesView().frame
+        bgScroll().maximumZoomScale = 4.0
+        bgScroll().minimumZoomScale = 1.0
+        bgScroll().zoomScale = 2.0
         
-        if contentsFrame.size.width < boundsSize.width {
-            contentsFrame.origin.x = (boundsSize.width - contentsFrame.size.width) / 2.0
-        } else {
-            contentsFrame.origin.x = 0.0
-        }
-        
-        if contentsFrame.size.height < boundsSize.height {
-            contentsFrame.origin.y = (boundsSize.height - contentsFrame.size.height) / 2.0
-        } else {
-            contentsFrame.origin.y = 0.0
-        }
-        
-        clothesImagesView().frame = contentsFrame
     }
 }
 
